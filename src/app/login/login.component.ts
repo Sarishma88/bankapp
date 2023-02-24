@@ -26,9 +26,28 @@ export class LoginComponent {
   ngOnInit(): void {
 
   }
-  login() {
-    var acnum = this.acno
-    var psw = this.password
+  // login() {
+  //   var acnum = this.acno
+  //   var psw = this.password
+  //   let userDetails = this.userDetails
+
+  //   if (acnum in userDetails) {
+  //     if (psw == userDetails[acnum]['password']) {
+  //       alert('login successfull')
+  //     }
+  //     else {
+  //       alert('incorrect pswd')
+  //     }
+  //   }
+  //   else {
+  //     alert('user Doesnot exist')
+  //   }
+  // }
+  login(a:any,b:any) {
+
+
+    var acnum = a.value
+    var psw = b.value
     let userDetails = this.userDetails
 
     if (acnum in userDetails) {
